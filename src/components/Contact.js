@@ -18,10 +18,27 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+    
+    // Create WhatsApp message with form data
+    const phoneNumber = '+919739731119';
+    const message = `*New Contact Form Inquiry*\n\n` +
+                   `*Name:* ${formData.name}\n` +
+                   `*Email:* ${formData.email}\n` +
+                   `*Phone:* ${formData.phone || 'Not provided'}\n\n` +
+                   `*Message:*\n${formData.message}\n\n` +
+                   `_Sent from Urban Guest website contact form_`;
+    
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp with pre-filled message
+    window.open(whatsappURL, '_blank');
+    
+    // Reset form after successful submission
     setFormData({ name: '', email: '', phone: '', message: '' });
+    
+    // Show success message
+    alert('Redirecting to WhatsApp! Your message will be pre-filled and ready to send.');
   };
 
   return (
@@ -29,7 +46,7 @@ const Contact = () => {
       <div className="container">
         <div className="contact-header">
           <h2>Get In Touch</h2>
-          <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
+          <p>Fill out the form below and we'll connect you directly via WhatsApp for instant communication.</p>
         </div>
         
         <div className="contact-content">
@@ -79,7 +96,8 @@ const Contact = () => {
               </div>
               
               <button type="submit" className="submit-btn">
-                Send Message
+                <span className="whatsapp-icon">💬</span>
+                Send via WhatsApp
               </button>
             </form>
           </div>
