@@ -161,7 +161,7 @@ const Contact = () => {
       
       <div className="footer">
         <div className="container">
-          <p>&copy; 2024 Urban Guest</p>
+          <p>&copy; 2025 Urban Guest</p>
         </div>
       </div>
     </section>
