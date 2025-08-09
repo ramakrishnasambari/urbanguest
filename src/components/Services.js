@@ -4,9 +4,9 @@ import './Services.css';
 const Services = () => {
   const services = [
     {
-      title: "New Home Construction",
-      description: "We offer professional services in building new homes with high-quality construction materials and attention to detail, ensuring your dream home becomes a reality.",
-      image: `${process.env.PUBLIC_URL}/new_home_construction.jpeg`
+      title: "Co Working Space",
+      description: "Modern co-working spaces designed for freelancers, startups, and remote teams. Enjoy flexible memberships, high-speed internet, and a collaborative environment that boosts productivity.",
+      image: `${process.env.PUBLIC_URL}/coworkingspace.jpeg`
     },
     {
       title: "Commercial Space",
@@ -24,9 +24,9 @@ const Services = () => {
       image: `${process.env.PUBLIC_URL}/office_space.jpeg`
     },
     {
-      title: "Agriculture Land",
-      description: "Invest in agricultural land with great potential for growth and sustainability. We offer prime agricultural plots in strategic locations to boost your farming business.",
-      image: `${process.env.PUBLIC_URL}/agriculture.jpeg`
+      title: "Residential Villas",
+      description: "Luxurious residential villas offering spacious living, modern amenities, and premium locations. Perfect for families seeking comfort, privacy, and elegance in their dream home.",
+      image: `${process.env.PUBLIC_URL}/residentialvillas.jpeg`
     },
     {
       title: "Residential",

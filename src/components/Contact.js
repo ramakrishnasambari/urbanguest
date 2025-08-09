@@ -91,7 +91,7 @@ const Contact = () => {
               <div className="contact-icon">📍</div>
               <div className="contact-details">
                 <h4>Address</h4>
-                <p>Office no:#1403, 14th Floor, Manjeera Trinity Corporate K P H B Phase 3, Hyderabad, 500072</p>
+                <p>Innov8 Pranava Business Park, 7th Floor, Pranava Business Park, Beside Harsha Toyota Showroom, Kothaguda, Telangana 500084</p>
               </div>
             </div>
             
@@ -99,7 +99,7 @@ const Contact = () => {
               <div className="contact-icon">📞</div>
               <div className="contact-details">
                 <h4>Phone</h4>
-                <p>986543210</p>
+                <p>+919739731119</p>
               </div>
             </div>
             
@@ -107,7 +107,7 @@ const Contact = () => {
               <div className="contact-icon">✉️</div>
               <div className="contact-details">
                 <h4>Email</h4>
-                <p>www.urbanguest.com</p>
+                <p>varma@urbanguestrentals.com</p>
               </div>
             </div>
           </div>

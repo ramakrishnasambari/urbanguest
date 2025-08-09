@@ -340,3 +340,71 @@
     gap: 12px;
   }
 }
+
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 0;
+  }
+  
+  .about-hero {
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .about-hero-text h2,
+  .investment-section h2 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  
+  .about-hero-text p,
+  .investment-section > p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .about-hero-image img {
+    height: 250px;
+  }
+  
+  .features-grid {
+    gap: 15px;
+  }
+  
+  .feature-item {
+    padding: 20px 12px;
+    gap: 10px;
+  }
+  
+  .feature-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+  
+  .feature-item h4 {
+    font-size: 14px;
+  }
+  
+  .investment-section {
+    margin-top: 60px;
+    padding-top: 50px;
+  }
+  
+  .investment-point {
+    gap: 12px;
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .investment-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+  
+  .investment-point p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

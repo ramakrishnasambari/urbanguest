@@ -21,17 +21,16 @@
   padding: 15px 20px;
 }
 
-.logo h1 {
-  background: linear-gradient(135deg, #3498db, #2980b9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-size: 28px;
-  font-weight: 800;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  position: relative;
+.logo img {
+  height: 50px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
 }
 
 .contact-info {
@@ -104,19 +103,65 @@
   .header-container {
     flex-direction: column;
     gap: 15px;
-    padding: 10px 20px;
+    padding: 10px 15px;
+  }
+  
+  .logo img {
+    height: 40px;
+    max-width: 150px;
+  }
+  
+  .contact-info {
+    order: 2;
+  }
+  
+  .navigation {
+    order: 3;
   }
   
   .navigation ul {
-    gap: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .navigation button {
-    font-size: 14px;
-    padding: 8px 12px;
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 20px;
   }
   
-  .logo h1 {
-    font-size: 24px;
+  .call-today {
+    font-size: 12px;
+  }
+  
+  .phone-number {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 8px 10px;
+    gap: 10px;
+  }
+  
+  .logo img {
+    height: 35px;
+    max-width: 120px;
+  }
+  
+  .navigation ul {
+    gap: 8px;
+  }
+  
+  .navigation button {
+    font-size: 11px;
+    padding: 6px 12px;
+    letter-spacing: 0.5px;
+  }
+  
+  .phone-number {
+    font-size: 14px;
   }
 }

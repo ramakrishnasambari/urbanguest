@@ -90,7 +90,7 @@
 
 @media (max-width: 768px) {
   .services {
-    padding: 60px 0;
+    padding: 50px 0;
   }
   
   .services h2 {
@@ -99,22 +99,59 @@
   
   .services-grid {
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 20px;
   }
   
   .service-image {
-    height: 200px;
+    height: 180px;
   }
   
   .service-content {
-    padding: 25px 20px;
+    padding: 20px 15px;
   }
   
   .service-content h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .service-content p {
     font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 40px 0;
+  }
+  
+  .services h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .services-subtitle {
+    font-size: 16px;
+  }
+  
+  .services-grid {
+    gap: 15px;
+  }
+  
+  .service-image {
+    height: 160px;
+  }
+  
+  .service-content {
+    padding: 18px 12px;
+  }
+  
+  .service-content h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .service-content p {
+    font-size: 13px;
   }
 }
