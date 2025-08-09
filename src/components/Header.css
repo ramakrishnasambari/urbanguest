@@ -18,14 +18,14 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 15px 20px;
+  padding: 10px 20px;
   position: relative;
 }
 
 .logo img {
-  height: 65px;
+  height: 55px;
   width: auto;
-  max-width: 250px;
+  max-width: 220px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -118,6 +118,10 @@
 }
 
 /* Mobile Contact and Menu Styles */
+.mobile-actions {
+  display: none;
+}
+
 .mobile-contact {
   display: none;
 }
@@ -191,15 +195,21 @@
     display: none;
   }
   
+  .mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
   .mobile-contact {
     display: flex;
     align-items: center;
   }
   
   .phone-icon {
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
-    padding: 8px;
+    padding: 6px;
     border-radius: 50%;
     background: linear-gradient(135deg, #3498db, #2980b9);
     color: white;
@@ -207,8 +217,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
+    width: 38px;
+    height: 38px;
   }
   
   .phone-icon:hover {
@@ -218,7 +228,6 @@
   
   .mobile-menu-toggle {
     display: block;
-    margin-left: 15px;
   }
   
   .navigation {
@@ -290,9 +299,9 @@
   }
   
   .phone-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
   }
   
   .navigation {

@@ -31,19 +31,21 @@ const Header = () => {
           </a>
         </div>
         
-        <div className="mobile-contact">
-          <a href="tel:+919739731119" className="phone-icon">
-            📞
-          </a>
+        <div className="mobile-actions">
+          <div className="mobile-contact">
+            <a href="tel:+919739731119" className="phone-icon">
+              📞
+            </a>
+          </div>
+          
+          <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+            <span className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
         </div>
-        
-        <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-          <span className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
         
         <nav className={`navigation ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <ul>
