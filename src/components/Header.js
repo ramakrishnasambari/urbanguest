@@ -24,28 +24,13 @@ const Header = () => {
           <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Urban Guest" />
         </div>
         
-        <div className="contact-info desktop-only">
-          <a href="tel:+919739731119" className="desktop-phone">
-            <span className="phone-icon-desktop">📞</span>
-            <span className="phone-number">+919739731119</span>
-          </a>
-        </div>
-        
-        <div className="mobile-actions">
-          <div className="mobile-contact">
-            <a href="tel:+919739731119" className="phone-icon">
-              📞
-            </a>
-          </div>
-          
-          <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-            <span className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-          </button>
-        </div>
+        <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+          <span className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
         
         <nav className={`navigation ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <ul>
