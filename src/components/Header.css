@@ -23,9 +23,9 @@
 }
 
 .logo img {
-  height: 50px;
+  height: 65px;
   width: auto;
-  max-width: 200px;
+  max-width: 250px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -36,21 +36,38 @@
 
 .contact-info {
   display: flex;
-  flex-direction: column;
   align-items: center;
   color: #34495e;
 }
 
-.call-today {
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 2px;
+.desktop-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid rgba(52, 152, 219, 0.2);
+  transition: all 0.3s ease;
+}
+
+.desktop-phone:hover {
+  border-color: #3498db;
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+  transform: translateY(-2px);
+}
+
+.phone-icon-desktop {
+  font-size: 20px;
+  color: #3498db;
 }
 
 .phone-number {
-  font-size: 18px;
-  font-weight: bold;
-  color: #e74c3c;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
 }
 
 .navigation ul {
@@ -166,8 +183,8 @@
   }
   
   .logo img {
-    height: 40px;
-    max-width: 150px;
+    height: 45px;
+    max-width: 180px;
   }
   
   .desktop-only {
@@ -268,8 +285,8 @@
   }
   
   .logo img {
-    height: 35px;
-    max-width: 120px;
+    height: 40px;
+    max-width: 150px;
   }
   
   .phone-icon {

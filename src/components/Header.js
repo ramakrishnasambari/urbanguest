@@ -25,8 +25,10 @@ const Header = () => {
         </div>
         
         <div className="contact-info desktop-only">
-          <span className="call-today">Call Today</span>
-          <span className="phone-number">+919739731119</span>
+          <a href="tel:+919739731119" className="desktop-phone">
+            <span className="phone-icon-desktop">📞</span>
+            <span className="phone-number">+919739731119</span>
+          </a>
         </div>
         
         <div className="mobile-contact">
