@@ -11,7 +11,7 @@ const Services = () => {
     {
       title: "Rental Apartments & Villas",
       description: "Premium rental apartments and luxurious villas in prime locations. From cozy studios to spacious family homes, find your perfect rental with modern amenities and flexible lease terms.",
-      image: `${process.env.PUBLIC_URL}/apartments.jpeg`
+      image: `${process.env.PUBLIC_URL}/apartmentsnvillas.jpeg`
     },
     {
       title: "Property Management",
@@ -26,7 +26,7 @@ const Services = () => {
     {
       title: "Short-term Stays",
       description: "Flexible short-term accommodation options perfect for business trips, vacations, or temporary relocations. Fully equipped properties with hotel-like services and amenities.",
-      image: `${process.env.PUBLIC_URL}/office_space.jpeg`
+      image: `${process.env.PUBLIC_URL}/shortstays.jpeg`
     }
   ];
 

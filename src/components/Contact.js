@@ -113,6 +113,21 @@ const Contact = () => {
                 <p>varma@urbanguestrentals.com</p>
               </div>
             </div>
+            
+            <div className="social-media-section">
+              <h4>Follow Us</h4>
+              <div className="social-icons">
+                <div className="social-icon linkedin" title="LinkedIn">
+                  <span>💼</span>
+                </div>
+                <div className="social-icon instagram" title="Instagram">
+                  <span>📷</span>
+                </div>
+                <div className="social-icon facebook" title="Facebook">
+                  <span>👥</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
