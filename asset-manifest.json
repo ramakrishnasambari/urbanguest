@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/urbanguest/static/css/main.a2ca9cc7.css",
+    "main.js": "/urbanguest/static/js/main.41a3c4f2.js",
+    "index.html": "/urbanguest/index.html",
+    "main.a2ca9cc7.css.map": "/urbanguest/static/css/main.a2ca9cc7.css.map",
+    "main.41a3c4f2.js.map": "/urbanguest/static/js/main.41a3c4f2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2ca9cc7.css",
+    "static/js/main.41a3c4f2.js"
+  ]
+}
