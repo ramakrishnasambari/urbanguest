@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    // Close mobile menu after navigation
+    setIsMobileMenuOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -16,12 +24,26 @@ const Header = () => {
           <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Urban Guest" />
         </div>
         
-        <div className="contact-info">
+        <div className="contact-info desktop-only">
           <span className="call-today">Call Today</span>
           <span className="phone-number">+919739731119</span>
         </div>
         
-        <nav className="navigation">
+        <div className="mobile-contact">
+          <a href="tel:+919739731119" className="phone-icon">
+            📞
+          </a>
+        </div>
+        
+        <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+          <span className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        
+        <nav className={`navigation ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <ul>
             <li>
               <button onClick={() => scrollToSection('about')}>About</button>
@@ -34,6 +56,8 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        
+        {isMobileMenuOpen && <div className="mobile-overlay" onClick={toggleMobileMenu}></div>}
       </div>
     </header>
   );
