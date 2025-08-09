@@ -24,30 +24,54 @@ const About = () => {
           <div className="features-grid">
             <div className="features-column">
               <div className="feature-item">
+                <div className="feature-icon experience">
+                  <span>🏆</span>
+                </div>
                 <h4>Years of Experience</h4>
               </div>
               <div className="feature-item">
+                <div className="feature-icon insurance">
+                  <span>🛡️</span>
+                </div>
                 <h4>Fully Insured</h4>
               </div>
               <div className="feature-item">
+                <div className="feature-icon cost">
+                  <span>📊</span>
+                </div>
                 <h4>Cost Control Experts</h4>
               </div>
               <div className="feature-item">
+                <div className="feature-icon guarantee">
+                  <span>✅</span>
+                </div>
                 <h4>100% Satisfaction Guarantee</h4>
               </div>
             </div>
             
             <div className="features-column">
               <div className="feature-item">
+                <div className="feature-icon consultation">
+                  <span>💬</span>
+                </div>
                 <h4>Free Consultation</h4>
               </div>
               <div className="feature-item">
+                <div className="feature-icon customers">
+                  <span>😊</span>
+                </div>
                 <h4>Satisfied Customers</h4>
               </div>
               <div className="feature-item">
+                <div className="feature-icon management">
+                  <span>📋</span>
+                </div>
                 <h4>Project Management</h4>
               </div>
               <div className="feature-item">
+                <div className="feature-icon pricing">
+                  <span>💎</span>
+                </div>
                 <h4>Affordable Pricing</h4>
               </div>
             </div>
@@ -65,19 +89,27 @@ const About = () => {
           
           <div className="investment-points">
             <div className="investment-point">
-              <span className="arrow">→</span>
+              <div className="investment-icon growth">
+                <span>📈</span>
+              </div>
               <p>By realizing the potential of up-and-coming areas, our returns are unparalleled.</p>
             </div>
             <div className="investment-point">
-              <span className="arrow">→</span>
+              <div className="investment-icon efficiency">
+                <span>💰</span>
+              </div>
               <p>We work to limit capital expense without sacrificing on ROI or high standards, resulting in significant, sustainable yields.</p>
             </div>
             <div className="investment-point">
-              <span className="arrow">→</span>
+              <div className="investment-icon location">
+                <span>🏙️</span>
+              </div>
               <p>Delve into prime investment properties not only in the vibrant locations of Hyderabad</p>
             </div>
             <div className="investment-point">
-              <span className="arrow">→</span>
+              <div className="investment-icon expansion">
+                <span>🌟</span>
+              </div>
               <p>but also explore our other investment options in Bangalore & Goa.</p>
             </div>
           </div>
