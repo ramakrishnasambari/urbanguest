@@ -45,7 +45,10 @@ const Contact = () => {
     <section id="contact" className="contact">
       <div className="container">
         <div className="contact-header">
-          <h2>Get In Touch</h2>
+          <h2>
+            <span className="header-location-pin">📍</span>
+            Get In Touch
+          </h2>
           <p>Fill out the form below and we'll connect you directly via WhatsApp for instant communication.</p>
         </div>
         
@@ -96,8 +99,8 @@ const Contact = () => {
               </div>
               
               <button type="submit" className="submit-btn">
-                <span className="whatsapp-icon">💬</span>
-                Send via WhatsApp
+                Send Message
+                <span className="whatsapp-icon-small">📱</span>
               </button>
             </form>
           </div>

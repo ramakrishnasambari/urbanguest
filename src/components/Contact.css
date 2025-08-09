@@ -15,6 +15,40 @@
   color: white;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header-location-pin {
+  font-size: 32px;
+  animation: glow-orange 2s infinite;
+  display: inline-block;
+  color: #FF8C00;
+}
+
+@keyframes glow-orange {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    text-shadow: 0 0 10px #FF8C00, 0 0 20px #FF8C00, 0 0 30px #FF8C00;
+  }
+  25% {
+    opacity: 0.8;
+    transform: scale(1.1);
+    text-shadow: 0 0 15px #FF8C00, 0 0 25px #FF8C00, 0 0 35px #FF8C00, 0 0 45px #FF8C00;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+    text-shadow: 0 0 20px #FF8C00, 0 0 30px #FF8C00, 0 0 40px #FF8C00, 0 0 50px #FF8C00, 0 0 60px #FF8C00;
+  }
+  75% {
+    opacity: 0.9;
+    transform: scale(0.95);
+    text-shadow: 0 0 12px #FF8C00, 0 0 22px #FF8C00, 0 0 32px #FF8C00;
+  }
 }
 
 .contact-header p {
@@ -116,25 +150,25 @@
   left: 0;
 }
 
-.whatsapp-icon {
-  margin-right: 8px;
-  font-size: 18px;
+.whatsapp-icon-small {
+  margin-left: 8px;
+  font-size: 16px;
   display: inline-block;
-  animation: pulse-whatsapp 2s infinite;
+  animation: pulse-whatsapp-small 2s infinite;
 }
 
-@keyframes pulse-whatsapp {
+@keyframes pulse-whatsapp-small {
   0%, 100% {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 
-.submit-btn:hover .whatsapp-icon {
+.submit-btn:hover .whatsapp-icon-small {
   animation: none;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .contact-info-section {
@@ -156,32 +190,32 @@
 
 .location-pin {
   font-size: 24px;
-  animation: glow 2s infinite;
+  animation: glow-orange-small 2s infinite;
   display: inline-block;
-  color: #FFD700;
-  text-shadow: 0 0 10px #FFD700;
+  color: #FF8C00;
+  text-shadow: 0 0 10px #FF8C00;
 }
 
-@keyframes glow {
+@keyframes glow-orange-small {
   0%, 100% {
     opacity: 1;
     transform: scale(1);
-    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+    text-shadow: 0 0 10px #FF8C00, 0 0 20px #FF8C00, 0 0 30px #FF8C00;
   }
   25% {
     opacity: 0.8;
     transform: scale(1.1);
-    text-shadow: 0 0 15px #FFD700, 0 0 25px #FFD700, 0 0 35px #FFD700, 0 0 45px #FFD700;
+    text-shadow: 0 0 15px #FF8C00, 0 0 25px #FF8C00, 0 0 35px #FF8C00, 0 0 45px #FF8C00;
   }
   50% {
     opacity: 1;
     transform: scale(1.05);
-    text-shadow: 0 0 20px #FFD700, 0 0 30px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700, 0 0 60px #FFD700;
+    text-shadow: 0 0 20px #FF8C00, 0 0 30px #FF8C00, 0 0 40px #FF8C00, 0 0 50px #FF8C00, 0 0 60px #FF8C00;
   }
   75% {
     opacity: 0.9;
     transform: scale(0.95);
-    text-shadow: 0 0 12px #FFD700, 0 0 22px #FFD700, 0 0 32px #FFD700;
+    text-shadow: 0 0 12px #FF8C00, 0 0 22px #FF8C00, 0 0 32px #FF8C00;
   }
 }
 
