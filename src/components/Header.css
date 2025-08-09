@@ -70,7 +70,61 @@
   letter-spacing: 0.5px;
 }
 
-.navigation {
+/* Desktop Navigation */
+.desktop-nav {
+  display: flex;
+}
+
+.desktop-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  align-items: center;
+}
+
+.desktop-nav button {
+  background: none;
+  border: 2px solid transparent;
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.desktop-nav button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.desktop-nav button:hover {
+  color: white;
+  border-color: #3498db;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
+.desktop-nav button:hover::before {
+  left: 0;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
   position: fixed;
   top: 0;
   right: -300px;
@@ -83,11 +137,11 @@
   padding-top: 80px;
 }
 
-.navigation.mobile-open {
+.mobile-nav.mobile-open {
   right: 0;
 }
 
-.navigation ul {
+.mobile-nav ul {
   flex-direction: column;
   gap: 0;
   padding: 20px;
@@ -96,11 +150,11 @@
   margin: 0;
 }
 
-.navigation li {
+.mobile-nav li {
   margin-bottom: 15px;
 }
 
-.navigation button {
+.mobile-nav button {
   width: 100%;
   text-align: left;
   font-size: 16px;
@@ -115,7 +169,7 @@
   letter-spacing: 0.8px;
 }
 
-.navigation button:hover {
+.mobile-nav button:hover {
   background: linear-gradient(135deg, #3498db, #2980b9);
   color: white;
   transform: translateX(5px);
@@ -195,6 +249,24 @@
   .logo img {
     height: 45px;
     max-width: 180px;
+  }
+  
+  .desktop-nav {
+    display: none;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
+  
+  .mobile-nav {
+    display: none;
   }
 }
 

@@ -85,7 +85,10 @@ const Contact = () => {
           </div>
           
           <div className="contact-info-section">
-            <h3>Contact Info</h3>
+            <h3>
+              <span className="location-pin">📍</span>
+              Contact Info
+            </h3>
             
             <div className="contact-item">
               <div className="contact-icon">📍</div>

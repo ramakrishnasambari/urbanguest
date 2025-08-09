@@ -21,8 +21,22 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Urban Guest" />
+          <img src={`${process.env.PUBLIC_URL}/logo_resized.png`} alt="Urban Guest" />
         </div>
+        
+        <nav className="navigation desktop-nav">
+          <ul>
+            <li>
+              <button onClick={() => scrollToSection('about')}>About</button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('services')}>Services</button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('contact')}>Contact</button>
+            </li>
+          </ul>
+        </nav>
         
         <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
           <span className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -32,7 +46,7 @@ const Header = () => {
           </span>
         </button>
         
-        <nav className={`navigation ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+        <nav className={`navigation mobile-nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <ul>
             <li>
               <button onClick={() => scrollToSection('about')}>About</button>
