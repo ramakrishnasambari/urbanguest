@@ -38,6 +38,9 @@ const Header = () => {
               <button onClick={() => scrollToSection('about')}>About</button>
             </li>
             <li>
+              <button onClick={() => scrollToSection('property-management')}>Property Management</button>
+            </li>
+            <li>
               <button onClick={() => scrollToSection('services')}>Services</button>
             </li>
             <li>
@@ -70,6 +73,9 @@ const Header = () => {
           <ul>
             <li>
               <button onClick={() => scrollToSection('about')}>About</button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('property-management')}>Property Management</button>
             </li>
             <li>
               <button onClick={() => scrollToSection('services')}>Services</button>

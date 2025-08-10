@@ -21,58 +21,51 @@ const About = () => {
             </div>
           </div>
           
-          <div className="features-grid">
-            <div className="features-column">
-              <div className="feature-item">
-                <div className="feature-icon experience">
-                  <span>🏆</span>
+          <div className="ribbon-banner-section">
+            <div className="ribbon-container">
+              <div className="ribbon-row">
+                <div className="ribbon-item">
+                  <div className="ribbon-banner">
+                    <span className="ribbon-text">Years of Experience</span>
+                  </div>
                 </div>
-                <h4>Years of Experience</h4>
+                <div className="ribbon-item">
+                  <div className="ribbon-banner">
+                    <span className="ribbon-text">Fully Insured</span>
+                  </div>
+                </div>
+                <div className="ribbon-item">
+                  <div className="ribbon-banner">
+                    <span className="ribbon-text">Cost Control Experts</span>
+                  </div>
+                </div>
+                <div className="ribbon-item">
+                  <div className="ribbon-banner">
+                    <span className="ribbon-text">100% Satisfaction</span>
+                  </div>
+                </div>
               </div>
-              <div className="feature-item">
-                <div className="feature-icon insurance">
-                  <span>🛡️</span>
+              <div className="ribbon-row">
+                <div className="ribbon-item">
+                  <div className="ribbon-banner">
+                    <span className="ribbon-text">Free Consultation</span>
+                  </div>
                 </div>
-                <h4>Fully Insured</h4>
-              </div>
-              <div className="feature-item">
-                <div className="feature-icon cost">
-                  <span>📊</span>
+                <div className="ribbon-item">
+                  <div className="ribbon-banner">
+                    <span className="ribbon-text">Satisfied Customers</span>
+                  </div>
                 </div>
-                <h4>Cost Control Experts</h4>
-              </div>
-              <div className="feature-item">
-                <div className="feature-icon guarantee">
-                  <span>✅</span>
+                <div className="ribbon-item">
+                  <div className="ribbon-banner">
+                    <span className="ribbon-text">Project Management</span>
+                  </div>
                 </div>
-                <h4>100% Satisfaction Guarantee</h4>
-              </div>
-            </div>
-            
-            <div className="features-column">
-              <div className="feature-item">
-                <div className="feature-icon consultation">
-                  <span>💬</span>
+                <div className="ribbon-item">
+                  <div className="ribbon-banner">
+                    <span className="ribbon-text">Affordable Pricing</span>
+                  </div>
                 </div>
-                <h4>Free Consultation</h4>
-              </div>
-              <div className="feature-item">
-                <div className="feature-icon customers">
-                  <span>😊</span>
-                </div>
-                <h4>Satisfied Customers</h4>
-              </div>
-              <div className="feature-item">
-                <div className="feature-icon management">
-                  <span>📋</span>
-                </div>
-                <h4>Project Management</h4>
-              </div>
-              <div className="feature-item">
-                <div className="feature-icon pricing">
-                  <span>💎</span>
-                </div>
-                <h4>Affordable Pricing</h4>
               </div>
             </div>
           </div>
@@ -80,36 +73,28 @@ const About = () => {
         
         <div className="investment-section">
           <h2>LOOKING FOR INVESTMENT</h2>
-          <p>
+          <p className="investment-intro">
             We understand that profitable real estate investing requires more than just finding properties. 
             It requires market insight, financial acumen, and a strategic approach to identify high-potential 
             investments. That's why we work for you—offering expert advice, data-driven analysis, and access 
             to lucrative investment opportunities.
           </p>
           
-          <div className="investment-points">
-            <div className="investment-point">
-              <div className="investment-icon growth">
-                <span>📈</span>
-              </div>
+          <div className="investment-highlights">
+            <div className="highlight-item">
+              <h3>Unparalleled Returns</h3>
               <p>By realizing the potential of up-and-coming areas, our returns are unparalleled.</p>
             </div>
-            <div className="investment-point">
-              <div className="investment-icon efficiency">
-                <span>💰</span>
-              </div>
+            <div className="highlight-item">
+              <h3>Cost Efficiency</h3>
               <p>We work to limit capital expense without sacrificing on ROI or high standards, resulting in significant, sustainable yields.</p>
             </div>
-            <div className="investment-point">
-              <div className="investment-icon location">
-                <span>🏙️</span>
-              </div>
+            <div className="highlight-item">
+              <h3>Prime Locations</h3>
               <p>Delve into prime investment properties not only in the vibrant locations of Hyderabad</p>
             </div>
-            <div className="investment-point">
-              <div className="investment-icon expansion">
-                <span>🌟</span>
-              </div>
+            <div className="highlight-item">
+              <h3>Expansion Opportunities</h3>
               <p>but also explore our other investment options in Bangalore & Goa.</p>
             </div>
           </div>

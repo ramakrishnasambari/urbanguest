@@ -1,6 +1,6 @@
 .property-management {
   padding: 100px 0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -12,8 +12,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 20% 80%, rgba(52, 152, 219, 0.05) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(155, 89, 182, 0.05) 0%, transparent 50%);
+  background: radial-gradient(circle at 20% 80%, rgba(52, 152, 219, 0.03) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(155, 89, 182, 0.03) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -64,10 +64,11 @@
 
 .value-proposition {
   margin-bottom: 40px;
-  padding: 30px;
-  background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(155, 89, 182, 0.1) 100%);
-  border-radius: 15px;
-  border-left: 4px solid #3498db;
+  padding: 35px;
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.08) 0%, rgba(155, 89, 182, 0.08) 100%);
+  border-radius: 20px;
+  border-left: 5px solid #3498db;
+  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.1);
 }
 
 .value-proposition h3 {
@@ -132,30 +133,8 @@
   font-size: 18px;
   font-weight: 600;
   color: #2c3e50;
-  margin-bottom: 20px;
-}
-
-.rating-badge {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 20px;
-  background: linear-gradient(135deg, #f39c12, #e67e22);
-  border-radius: 15px;
-  color: white;
-  box-shadow: 0 8px 25px rgba(243, 156, 18, 0.3);
-}
-
-.stars {
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-.rating-text {
-  font-size: 14px;
-  font-weight: 500;
-  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.6;
 }
 
 .features-showcase {
@@ -170,14 +149,16 @@
 
 .management-feature-card {
   background: white;
-  padding: 30px 25px;
-  border-radius: 15px;
+  padding: 0;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border: 1px solid #f0f0f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 1px solid #f8f9fa;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .management-feature-card::before {
@@ -186,10 +167,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(135deg, #3498db, #2980b9);
   transform: scaleX(0);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .management-feature-card:hover::before {
@@ -197,49 +178,56 @@
 }
 
 .management-feature-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(52, 152, 219, 0.15);
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(52, 152, 219, 0.15);
+  border-color: #e3f2fd;
 }
 
-.management-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 20px;
-  background: linear-gradient(135deg, #3498db, #2980b9);
-  border-radius: 50%;
+.management-image {
+  width: 100%;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
-.management-feature-card:hover .management-icon {
-  transform: scale(1.1) rotate(5deg);
+.management-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  transition: transform 0.4s ease;
+}
+
+.management-feature-card:hover .management-image img {
+  transform: scale(1.05);
 }
 
 .management-feature-card h4 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #2c3e50;
-  margin-bottom: 12px;
+  margin: 20px 20px 10px 20px;
 }
 
 .management-feature-card p {
   font-size: 14px;
   line-height: 1.5;
   color: #666;
-  margin: 0;
+  margin: 0 20px 20px 20px;
 }
 
 .contact-cta {
-  background: linear-gradient(135deg, #3498db, #2980b9);
-  border-radius: 20px;
-  padding: 60px 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  border-radius: 25px;
+  padding: 80px 50px;
   text-align: center;
   color: white;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+  margin-top: 60px;
 }
 
 .contact-cta::before {
@@ -249,46 +237,87 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(52, 152, 219, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
   animation: rotate 20s linear infinite;
+}
+
+.contact-cta::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>') repeat;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .cta-container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .contact-cta h3 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 15px;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .contact-cta p {
-  font-size: 18px;
-  margin-bottom: 30px;
+  font-size: 20px;
+  margin-bottom: 40px;
   opacity: 0.9;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .cta-button {
-  background: linear-gradient(135deg, #3498db, #2980b9);
-  color: white;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #667eea;
   border: none;
-  padding: 18px 40px;
+  padding: 20px 50px;
   border-radius: 50px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.6s ease;
+}
+
+.cta-button:hover::before {
+  left: 100%;
 }
 
 .cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(52, 152, 219, 0.4);
-  background: linear-gradient(135deg, #2980b9, #1f6391);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, #ffffff 0%, #e9ecef 100%);
+  color: #5a67d8;
 }
 
 @keyframes rotate {
@@ -331,12 +360,45 @@
     font-size: 24px;
   }
   
+  .management-image {
+    height: 120px;
+  }
+  
+  .management-feature-card h4 {
+    font-size: 16px;
+    margin: 15px 15px 8px 15px;
+  }
+  
+  .management-feature-card p {
+    font-size: 13px;
+    margin: 0 15px 15px 15px;
+  }
+  
   .contact-cta {
-    padding: 40px 20px;
+    padding: 60px 30px;
+    margin-top: 40px;
   }
   
   .contact-cta h3 {
-    font-size: 28px;
+    font-size: 32px;
+  }
+  
+  .contact-cta p {
+    font-size: 18px;
+  }
+  
+  .cta-button {
+    padding: 18px 40px;
+    font-size: 16px;
+  }
+  
+  .tags-row {
+    gap: 20px;
+  }
+  
+  .tag-item {
+    font-size: 14px;
+    padding: 6px 12px;
   }
 }
 
@@ -357,16 +419,44 @@
     padding: 12px 15px;
   }
   
-  .management-feature-card {
-    padding: 25px 20px;
+  .management-image {
+    height: 100px;
+  }
+  
+  .management-feature-card h4 {
+    font-size: 15px;
+    margin: 12px 12px 6px 12px;
+  }
+  
+  .management-feature-card p {
+    font-size: 12px;
+    margin: 0 12px 12px 12px;
+  }
+  
+  .contact-cta {
+    padding: 50px 25px;
+    margin-top: 30px;
   }
   
   .contact-cta h3 {
-    font-size: 24px;
+    font-size: 28px;
+  }
+  
+  .contact-cta p {
+    font-size: 16px;
   }
   
   .cta-button {
-    padding: 15px 30px;
-    font-size: 14px;
+    padding: 16px 35px;
+    font-size: 15px;
+  }
+  
+  .tags-row {
+    gap: 15px;
+  }
+  
+  .tag-item {
+    font-size: 12px;
+    padding: 5px 10px;
   }
 }

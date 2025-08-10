@@ -14,11 +14,6 @@ const Services = () => {
       image: `${process.env.PUBLIC_URL}/apartmentsnvillas.jpeg`
     },
     {
-      title: "Property Management",
-      description: "Comprehensive property management services including tenant screening, maintenance coordination, rent collection, and 24/7 support for stress-free property ownership.",
-      image: `${process.env.PUBLIC_URL}/residential.jpeg`
-    },
-    {
       title: "Corporate Housing Solutions",
       description: "Fully furnished corporate housing solutions for business travelers and relocating employees. Premium accommodations with all amenities for short and long-term stays.",
       image: `${process.env.PUBLIC_URL}/residentialvillas.jpeg`

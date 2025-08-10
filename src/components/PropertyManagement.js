@@ -4,39 +4,39 @@ import './PropertyManagement.css';
 const PropertyManagement = () => {
   const managementFeatures = [
     {
-      icon: '👥',
-      title: 'Tenant Management',
-      description: 'Professional tenant screening, onboarding, and relationship management'
+      image: 'propertycare.jpg',
+      title: 'Property Care',
+      description: 'Comprehensive property maintenance and regular inspections to keep your investment in top condition'
     },
     {
-      icon: '🔧',
-      title: 'Maintenance & Repairs',
-      description: '24/7 maintenance support with trusted vendors and quality assurance'
+      image: 'tenantexcellence.jpg',
+      title: 'Tenant Excellence',
+      description: 'Professional tenant screening, onboarding, and ongoing relationship management'
     },
     {
-      icon: '💳',
-      title: 'Rent Collection',
-      description: 'Automated rent collection and financial reporting for peace of mind'
+      image: 'smartrentcollection.jpg',
+      title: 'Smart Rent Collection',
+      description: 'Automated rent collection with detailed financial reporting and transparent accounting'
     },
     {
-      icon: '📊',
-      title: 'Transparent Reporting',
-      description: 'Monthly detailed reports on property performance and financials'
+      image: 'security.jpg',
+      title: 'Security & Protection',
+      description: '24/7 property monitoring and security services for complete peace of mind'
     },
     {
-      icon: '🛡️',
-      title: 'Property Security',
-      description: 'Regular property inspections and security monitoring services'
+      image: 'performanceanalytics.jpg',
+      title: 'Performance Analytics',
+      description: 'Real-time property performance reports and market insights for informed decisions'
     },
     {
-      icon: '📞',
-      title: '7 Days Support',
-      description: 'Round-the-clock customer support for all your property needs'
+      image: 'dedicated_support.jpg',
+      title: 'Dedicated Support',
+      description: 'Round-the-clock customer support with dedicated property managers for your needs'
     }
   ];
 
   return (
-    <section className="property-management">
+    <section id="property-management" className="property-management">
       <div className="container">
         <div className="management-header">
           <div className="header-content">
@@ -57,14 +57,14 @@ const PropertyManagement = () => {
               <h3>Complete Peace of Mind</h3>
               <p>
                 We handle everything — from tenant management and maintenance to rent collection — 
-                so you can enjoy complete peace of mind.
+                so you can enjoy complete peace of mind while maximizing your property's potential.
               </p>
             </div>
             
             <div className="trust-indicators">
               <div className="trust-item">
                 <span className="trust-icon">✅</span>
-                <span>Trusted Processes</span>
+                <span>Proven Processes</span>
               </div>
               <div className="trust-item">
                 <span className="trust-icon">💬</span>
@@ -72,18 +72,14 @@ const PropertyManagement = () => {
               </div>
               <div className="trust-item">
                 <span className="trust-icon">🏆</span>
-                <span>Years of Experience</span>
+                <span>Years of Excellence</span>
               </div>
             </div>
 
             <div className="cta-section">
               <p className="cta-text">
-                URBANGUEST is your go-to partner for stress-free property ownership.
+                URBANGUEST is your trusted partner for stress-free property ownership and maximum returns.
               </p>
-              <div className="rating-badge">
-                <span className="stars">⭐⭐⭐⭐⭐</span>
-                <span className="rating-text">Rated among top property service providers in Hyderabad</span>
-              </div>
             </div>
           </div>
 
@@ -91,8 +87,8 @@ const PropertyManagement = () => {
             <div className="features-grid-management">
               {managementFeatures.map((feature, index) => (
                 <div key={index} className="management-feature-card">
-                  <div className="management-icon">
-                    <span>{feature.icon}</span>
+                  <div className="management-image">
+                    <img src={`${process.env.PUBLIC_URL}/${feature.image}`} alt={feature.title} />
                   </div>
                   <h4>{feature.title}</h4>
                   <p>{feature.description}</p>

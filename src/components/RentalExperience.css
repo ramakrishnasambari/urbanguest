@@ -71,78 +71,191 @@
   color: #555;
 }
 
-.unique-value {
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-  border-radius: 25px;
-  padding: 40px 35px;
-  max-width: 700px;
-  margin: 0 auto;
-  border: 2px solid transparent;
-  background-clip: padding-box;
+.next-gen-showcase {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 0;
+  max-width: 1200px;
+  margin: 60px auto;
   position: relative;
-  box-shadow: 
-    0 20px 40px rgba(0, 0, 0, 0.3),
-    0 0 0 1px rgba(255, 255, 255, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
 }
 
-.unique-value::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-  opacity: 0.1;
-  z-index: -1;
+.showcase-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  position: relative;
+  z-index: 2;
+  min-height: 600px;
 }
 
-.unique-value::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-  border-radius: 25px;
-  z-index: -2;
-  opacity: 0.3;
-  filter: blur(10px);
-}
-
-.unique-badge {
+.showcase-text-section {
+  padding: 60px 50px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
+  background: #ffffff;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.showcase-badge {
+  position: relative;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
 .badge-text {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
   position: relative;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.unique-description {
+.badge-text:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+.showcase-title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.highlight-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+}
+
+.showcase-description {
   font-size: 18px;
   line-height: 1.6;
-  margin: 0;
-  color: #ffffff;
-  text-align: center;
-  font-weight: 400;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-weight: 600;
 }
 
+.showcase-subdescription {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.showcase-infographic-section {
+  background: #f8f9fa;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.road-container {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.road-chart {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto 30px;
+}
+
+.road-path {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.road-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.hyderabad-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.hyderabad-center h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 3;
+}
+
+.inventory-text {
+  position: relative;
+  z-index: 3;
+}
+
+.inventory-text p {
+  font-size: 11px;
+  color: #2c3e50;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+
+/* Why Choose Section - New Infographic Design */
 .why-choose-section {
   position: relative;
   z-index: 1;
+  padding: 80px 0;
+  background: #ffffff;
 }
 
 .section-title {
@@ -153,128 +266,89 @@
   color: #2c3e50;
 }
 
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
+.infographic-container {
+  max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.feature-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 40px 30px;
-  text-align: center;
-  border: 1px solid #f0f0f0;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s ease;
+.infographic-item {
+  display: flex;
+  align-items: center;
+  gap: 0;
   position: relative;
-  overflow: hidden;
 }
 
-.feature-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: var(--gradient);
-  transform: scaleX(0);
-  transition: transform 0.4s ease;
-}
-
-.feature-card:hover::before {
-  transform: scaleX(1);
-}
-
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.feature-icon-container {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 25px;
-  background: var(--gradient);
+.option-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
-.feature-icon {
+.circle-number {
   font-size: 32px;
-  z-index: 1;
+  font-weight: 900;
+  color: #2c3e50;
+  line-height: 1;
 }
 
-.feature-icon-container::before {
-  content: '';
+.circle-connector {
   position: absolute;
+  right: -10px;
   top: 50%;
-  left: 50%;
+  transform: translateY(-50%);
   width: 0;
   height: 0;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  transition: all 0.4s ease;
-  transform: translate(-50%, -50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #ffffff;
+  z-index: 3;
 }
 
-.feature-card:hover .feature-icon-container::before {
-  width: 100%;
-  height: 100%;
+.option-banner {
+  flex: 1;
+  height: 120px;
+  border-radius: 0 60px 60px 0;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-left: -1px;
 }
 
-.feature-title {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #2c3e50;
+.banner-content {
+  flex: 1;
 }
 
-.feature-description {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #555;
+.banner-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.banner-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
   margin: 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
 }
 
-.feature-glow {
-  position: absolute;
-  bottom: -50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  background: var(--gradient);
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  transform: translateX(-50%);
-  z-index: -1;
-}
-
-.feature-card:hover .feature-glow {
-  opacity: 0.1;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .rental-experience {
     padding: 60px 0;
@@ -302,8 +376,80 @@
     padding: 30px 20px;
   }
   
-  .unique-value {
-    padding: 20px;
+  .next-gen-showcase {
+    margin: 40px auto;
+    border-radius: 20px;
+  }
+  
+  .showcase-content {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  
+  .showcase-text-section {
+    padding: 40px 30px;
+  }
+  
+  .showcase-title {
+    font-size: 28px;
+  }
+  
+  .showcase-description {
+    font-size: 16px;
+  }
+  
+  .showcase-subdescription {
+    font-size: 14px;
+  }
+  
+  .showcase-infographic-section {
+    padding: 30px 20px;
+  }
+  
+  .road-chart {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .hyderabad-center {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .hyderabad-center h3 {
+    font-size: 20px;
+  }
+  
+  .inventory-text p {
+    font-size: 9px;
+  }
+
+  .infographic-container {
+    max-width: 100%;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  
+  .option-circle {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .circle-number {
+    font-size: 28px;
+  }
+  
+  .option-banner {
+    height: 100px;
+    padding: 0 20px;
+  }
+  
+  .banner-title {
+    font-size: 16px;
+  }
+  
+  .banner-description {
+    font-size: 12px;
   }
 }
 
@@ -332,4 +478,187 @@
   .feature-title {
     font-size: 20px;
   }
+  
+  .location-slider-section {
+    padding: 15px 0;
+  }
+  
+  .location-cards-slider {
+    gap: 0;
+    padding: 15px 0;
+  }
+  
+  .location-arrow {
+    font-size: 20px;
+    margin: 0 10px;
+    width: 25px;
+    height: 160px;
+  }
+  
+  .location-card {
+    width: 160px;
+    height: 160px;
+    padding: 0;
+  }
+  
+  .card-icon {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 0;
+  }
+  
+  .location-card h3 {
+    font-size: 14px;
+    margin: 12px 12px 6px 12px;
+  }
+  
+  .location-card p {
+    font-size: 9px;
+    margin: 0 12px 12px 12px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .infographic-container {
+    gap: 15px;
+  }
+  
+  .option-circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .circle-number {
+    font-size: 24px;
+  }
+  
+  .option-banner {
+    height: 80px;
+    padding: 0 15px;
+  }
+  
+  .banner-title {
+    font-size: 14px;
+  }
+  
+  .banner-description {
+    font-size: 11px;
+  }
+  
+  .banner-arrow {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+}
+
+/* Location Slider Section */
+.location-slider-section {
+  padding: 20px 0;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.location-cards-slider {
+  display: flex;
+  gap: 0;
+  overflow-x: hidden;
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+  animation: slideLeft 30s linear infinite;
+  width: max-content;
+  padding-left: 100vw;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.location-card {
+  width: 200px;
+  height: 200px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 0;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.location-card:hover::before {
+  transform: scaleX(1);
+}
+
+.location-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.location-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 15px 15px 8px 15px;
+}
+
+.location-card p {
+  font-size: 11px;
+  line-height: 1.4;
+  color: #555;
+  margin: 0 15px 15px 15px;
+}
+
+.location-arrow {
+  font-size: 24px;
+  color: #d1d5db;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 200px;
 }
