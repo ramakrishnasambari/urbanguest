@@ -17,6 +17,14 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const openWhatsApp = () => {
+    const phoneNumber = '+919739731119';
+    const message = `Hello! I'm interested in your real estate services. Can you please provide more information?`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappURL, '_blank');
+  };
+
   return (
     <header className="header">
       <div className="header-container">
@@ -37,14 +45,26 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        
-        <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-          <span className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
+
+        <div className="contact-info desktop-only">
+          <button onClick={openWhatsApp} className="desktop-phone">
+            <span className="phone-icon-desktop">📞</span>
+            <span className="phone-number">+91 97397 31119</span>
+          </button>
+        </div>
+
+        <div className="mobile-actions">
+          <button onClick={openWhatsApp} className="mobile-phone-icon">
+            <span className="phone-icon-mobile-header">📞</span>
+          </button>
+          <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+            <span className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
         
         <nav className={`navigation mobile-nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           <ul>
@@ -58,6 +78,12 @@ const Header = () => {
               <button onClick={() => scrollToSection('contact')}>Contact</button>
             </li>
           </ul>
+          <div className="mobile-contact">
+            <button onClick={openWhatsApp} className="mobile-phone">
+              <span className="phone-icon-mobile">📞</span>
+              <span className="phone-number">+91 97397 31119</span>
+            </button>
+          </div>
         </nav>
         
         {isMobileMenuOpen && <div className="mobile-overlay" onClick={toggleMobileMenu}></div>}

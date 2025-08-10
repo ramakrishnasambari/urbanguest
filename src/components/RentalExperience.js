@@ -35,7 +35,7 @@ const RentalExperience = () => {
         <div className="rental-hero">
           <div className="rental-content">
             <h1 className="rental-title">
-              At <span className="brand-highlight">URBANGUEST</span>, we redefine the rental experience in Hyderabad.
+              At <span className="brand-highlight">URBANGUEST</span>, <span className="gradient-text">we redefine the rental experience</span> in Hyderabad.
             </h1>
             <p className="rental-subtitle">
               From luxurious apartments, villas and cozy studios to spacious family homes, we bring you 
@@ -43,7 +43,6 @@ const RentalExperience = () => {
             </p>
             <div className="unique-value">
               <div className="unique-badge">
-                <span className="badge-icon">🏆</span>
                 <span className="badge-text">We're not just another rental agency</span>
               </div>
               <p className="unique-description">
