@@ -357,7 +357,39 @@
   
   .features-grid-management {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 25px;
+  }
+  
+  .management-feature-card {
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .management-image {
+    height: 140px;
+    min-height: 140px;
+    flex-shrink: 0;
+  }
+  
+  .management-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .management-feature-card h4 {
+    font-size: 16px;
+    margin: 15px 15px 8px 15px;
+    flex-grow: 0;
+  }
+  
+  .management-feature-card p {
+    font-size: 13px;
+    margin: 0 15px 15px 15px;
+    flex-grow: 1;
+    line-height: 1.5;
   }
   
   .value-proposition {
@@ -366,20 +398,6 @@
   
   .value-proposition h3 {
     font-size: 24px;
-  }
-  
-  .management-image {
-    height: 120px;
-  }
-  
-  .management-feature-card h4 {
-    font-size: 16px;
-    margin: 15px 15px 8px 15px;
-  }
-  
-  .management-feature-card p {
-    font-size: 13px;
-    margin: 0 15px 15px 15px;
   }
   
   .contact-cta {

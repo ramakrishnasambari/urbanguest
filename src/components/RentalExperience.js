@@ -35,7 +35,9 @@ const RentalExperience = () => {
         <div className="rental-hero">
           <div className="rental-content">
             <h1 className="rental-title">
-              At <span className="brand-highlight">URBANGUEST</span>, <span className="gradient-text">we redefine the rental experience</span> in Hyderabad.
+              At <span className="brand-highlight">URBANGUEST</span>,<br />
+              <span className="gradient-text">we redefine the rental experience</span><br />
+              in Hyderabad.
             </h1>
             <p className="rental-subtitle">
               From luxurious apartments, villas and cozy studios to spacious family homes, we bring you 
@@ -211,7 +213,7 @@ const RentalExperience = () => {
                 <img src={`${process.env.PUBLIC_URL}/hitech_city.png`} alt="HITEC City" />
               </div>
               <h3>HITEC City</h3>
-              <p>Tech hub with premium office spaces and modern residential complexes</p>
+              <p>We specialize in finding the best apartment inventory near Hitech City, tailored to match your budget, lifestyle, and convenience.</p>
             </div>
             
             <div className="location-arrow">→</div>
@@ -221,7 +223,7 @@ const RentalExperience = () => {
                 <img src={`${process.env.PUBLIC_URL}/metro.png`} alt="Metro Connects" />
               </div>
               <h3>Metro Connects</h3>
-              <p>Well-connected areas with excellent public transportation</p>
+              <p>We maintain a robust inventory strategically located near all major metro stations</p>
             </div>
             
             <div className="location-arrow">→</div>
@@ -231,7 +233,7 @@ const RentalExperience = () => {
                 <img src={`${process.env.PUBLIC_URL}/financial_distrct.png`} alt="Financial District" />
               </div>
               <h3>Financial District</h3>
-              <p>Business center with corporate offices and luxury accommodations</p>
+              <p>Our team specializes in identifying and securing prime available properties in the Financial District</p>
             </div>
             
             <div className="location-arrow">→</div>
@@ -241,7 +243,7 @@ const RentalExperience = () => {
                 <img src={`${process.env.PUBLIC_URL}/ringroad.jpeg`} alt="Outer Ring Road" />
               </div>
               <h3>Outer Ring Road</h3>
-              <p>Strategic locations with excellent connectivity and growth potential</p>
+              <p>Our team specializes in identifying and securing prime properties in close proximity to Outer Ring Road</p>
             </div>
             
             <div className="location-arrow">→</div>
@@ -251,7 +253,7 @@ const RentalExperience = () => {
                 <img src={`${process.env.PUBLIC_URL}/aeroplane.jpeg`} alt="Airport Connects" />
               </div>
               <h3>Airport Connects</h3>
-              <p>Convenient locations near international airport with modern amenities</p>
+              <p>URBANGUEST offers premium accommodation options strategically located in close proximity to Rajiv Gandhi International Airport (RGIA)</p>
             </div>
             
             <div className="location-arrow">→</div>

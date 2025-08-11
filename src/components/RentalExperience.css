@@ -27,10 +27,19 @@
 
 .rental-title {
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 30px;
   color: #2c3e50;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.rental-title br {
+  display: block;
+  content: "";
+  margin: 8px 0;
 }
 
 .brand-highlight {
@@ -356,6 +365,11 @@
   
   .rental-title {
     font-size: 32px;
+    line-height: 1.3;
+  }
+  
+  .rental-title br {
+    margin: 6px 0;
   }
   
   .rental-subtitle {
@@ -500,6 +514,11 @@
 @media (max-width: 480px) {
   .rental-title {
     font-size: 28px;
+    line-height: 1.4;
+  }
+  
+  .rental-title br {
+    margin: 5px 0;
   }
   
   .rental-subtitle {
