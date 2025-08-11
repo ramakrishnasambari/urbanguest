@@ -3,7 +3,7 @@ import './WhatsAppFloat.css';
 
 const WhatsAppFloat = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '+919739731119';
+    const phoneNumber = '+919848499299';
     const message = 'Hi! I am interested in your property rental services. Can you help me?';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

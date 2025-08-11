@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   const openWhatsApp = () => {
-    const phoneNumber = '+919739731119';
+    const phoneNumber = '+919848499299';
     const message = `Hello! I'm interested in your real estate services. Can you please provide more information?`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
@@ -52,7 +52,7 @@ const Header = () => {
         <div className="contact-info desktop-only">
           <button onClick={openWhatsApp} className="desktop-phone">
             <span className="phone-icon-desktop">📞</span>
-            <span className="phone-number">+91 97397 31119</span>
+            <span className="phone-number">+91 98484 99299</span>
           </button>
         </div>
 
@@ -87,7 +87,7 @@ const Header = () => {
           <div className="mobile-contact">
             <button onClick={openWhatsApp} className="mobile-phone">
               <span className="phone-icon-mobile">📞</span>
-              <span className="phone-number">+91 97397 31119</span>
+              <span className="phone-number">+91 98484 99299</span>
             </button>
           </div>
         </nav>

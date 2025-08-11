@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
     
     // Create WhatsApp message with form data
-    const phoneNumber = '+919739731119';
+    const phoneNumber = '+919848499299';
     const message = `*New Contact Form Inquiry*\n\n` +
                    `*Name:* ${formData.name}\n` +
                    `*Email:* ${formData.email}\n` +
@@ -123,7 +123,7 @@ const Contact = () => {
               <div className="contact-icon">📞</div>
               <div className="contact-details">
                 <h4>Phone</h4>
-                <p>+919739731119</p>
+                <p>+919848499299</p>
               </div>
             </div>
             
