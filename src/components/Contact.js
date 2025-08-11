@@ -161,6 +161,12 @@ const Contact = () => {
       
       <div className="footer">
         <div className="container">
+          <div className="footer-credits">
+            <div className="eshika-credit">
+              <img src={`${process.env.PUBLIC_URL}/eshikatp_icon.jpeg`} alt="Eshika" className="eshika-logo" />
+              <span>Designed & Developed by <strong>Eshika</strong> | 📱 6281234335</span>
+            </div>
+          </div>
           <p>&copy; 2025 Urban Guest</p>
         </div>
       </div>
