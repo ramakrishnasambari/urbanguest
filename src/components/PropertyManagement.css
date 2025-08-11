@@ -30,10 +30,16 @@
   color: #2c3e50;
   margin-bottom: 30px;
   line-height: 1.2;
+  text-align: center;
 }
 
-.title-highlight {
-  background: linear-gradient(135deg, #3498db, #2980b9);
+.brand-name {
+  color: #000000;
+  font-weight: 800;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -39,16 +39,13 @@ const PropertyManagement = () => {
     <section id="property-management" className="property-management">
       <div className="container">
         <div className="management-header">
-          <div className="header-content">
-            <h2 className="management-title">
-              <span className="title-highlight">URBANGUEST</span> Professional Property Management
-            </h2>
-            <p className="management-intro">
-              Looking for reliable and professional property management services in Hyderabad? 
-              At URBANGUEST, our dedicated team works <strong>7 days a week</strong> to ensure your property 
-              is managed efficiently, securely, and hassle-free.
-            </p>
-          </div>
+          <h1 className="management-title">
+            <span className="brand-name">URBANGUEST</span>{' '}
+            <span className="gradient-text">Professional Property Management</span>
+          </h1>
+          <p className="management-intro">
+            Comprehensive property management services designed to maximize your investment returns while minimizing your stress.
+          </p>
         </div>
 
         <div className="management-content">
