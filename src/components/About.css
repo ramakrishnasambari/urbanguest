@@ -82,7 +82,7 @@
 }
 
 .ribbon-banner {
-  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%);
   color: #ffffff;
   padding: 12px 20px;
   border-radius: 25px;
@@ -437,7 +437,7 @@
   transform: translateY(-50%);
   width: 6px;
   height: 30px;
-  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%);
   border-radius: 3px;
   box-shadow: 0 2px 8px rgba(220, 39, 67, 0.3);
 }

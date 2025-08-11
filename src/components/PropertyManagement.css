@@ -45,7 +45,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -243,7 +243,7 @@
 }
 
 .contact-cta {
-  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%);
   border-radius: 30px;
   padding: 50px 40px;
   text-align: center;
@@ -324,7 +324,7 @@
 .cta-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 35px rgba(255, 255, 255, 0.4);
-  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%);
   color: #ffffff;
 }
 

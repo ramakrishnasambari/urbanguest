@@ -24,7 +24,7 @@
 }
 
 .hero-button {
-  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%);
   color: #ffffff;
   padding: 15px 30px;
   border: none;
@@ -41,7 +41,7 @@
 .hero-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 35px rgba(220, 39, 67, 0.4);
-  background: linear-gradient(135deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #a01a7a 100%);
+  background: linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%);
 }
 
 @media (max-width: 768px) {

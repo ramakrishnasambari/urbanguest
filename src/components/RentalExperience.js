@@ -7,25 +7,25 @@ const RentalExperience = () => {
       number: "01",
       title: "Unbeatable Deals",
       description: "We negotiate directly with property owners to secure the lowest rents for you. Our exclusive network gives you access to properties you won't find on public listings.",
-      background: "linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)"
+      background: "linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%)"
     },
     {
       number: "02",
       title: "Exclusive Hyderabad Network",
       description: "Access to properties you won't find on public listings. We have partnerships with the best property owners across Hyderabad's prime locations.",
-      background: "linear-gradient(135deg, #e6683c 0%, #dc2743 25%, #cc2366 50%, #bc1888 75%, #a01a7a 100%)"
+      background: "linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%)"
     },
     {
       number: "03",
       title: "Zero Hassle Process",
       description: "From search to move-in, we handle the heavy lifting. Our streamlined process ensures you find your perfect home without any stress or complications.",
-      background: "linear-gradient(135deg, #dc2743 0%, #cc2366 25%, #bc1888 50%, #a01a7a 75%, #8e1a6a 100%)"
+      background: "linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%)"
     },
     {
       number: "04",
       title: "No Hidden Costs",
       description: "Transparent pricing with no last-minute surprises. What you see is what you pay, with complete clarity on all fees and charges.",
-      background: "linear-gradient(135deg, #cc2366 0%, #bc1888 25%, #a01a7a 50%, #8e1a6a 75%, #7a1a5a 100%)"
+      background: "linear-gradient(90deg, #9B1D4A .15%, #EA9723 99.66%)"
     }
   ];
 
