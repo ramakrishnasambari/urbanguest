@@ -30,7 +30,13 @@
   margin-bottom: 30px;
   line-height: 1.2;
   text-align: center;
-  background: none;
+  background: transparent;
+  background-color: transparent;
+}
+
+.management-title * {
+  background: transparent;
+  background-color: transparent;
 }
 
 .brand-name {
@@ -45,6 +51,17 @@
   background-clip: text;
   font-weight: 800;
   display: inline;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.gradient-text::before,
+.gradient-text::after {
+  display: none;
+  background: none;
+  content: none;
 }
 
 .management-intro {
